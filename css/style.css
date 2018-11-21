@@ -68,6 +68,10 @@ nav a:hover::before {
   width: 100%;
   background-color: rgb(77, 219, 255);
 }
+body{
+  
+  background-image: url('../images/background.jpg')
+}
 .a1 {
   display: flex;
   flex-direction: row;
@@ -78,8 +82,7 @@ nav a:hover::before {
   padding-right: 30px;
   padding-left: 30px;
 }
-.a1 p{
-  
+.a1 p {
   padding-right: 30px;
   padding-left: 30px;
 }
@@ -90,7 +93,6 @@ nav a:hover::before {
   padding-top: 20px;
   padding-left: 30px;
   padding-right: 30px;
-  background-color: rgb(204, 245, 255);
   text-align: justify;
   font-size: 25px;
 }
@@ -124,6 +126,7 @@ footer {
   padding-bottom: 5px;
 }
 .divfooter {
+  text-align: left;
   background-color: #000710;
   text-decoration: none;
   font-weight: bold;
@@ -139,14 +142,18 @@ footer {
 }
 .titulofooter {
   padding-top: 10px;
-  padding-bottom:10px; 
+  padding-bottom: 10px;
   font-size: 20px;
 }
-.twitter {
+.social a {
+  font-size: 18px;
   color: rgb(0, 106, 255);
   text-decoration: none;
 }
-.social a {
+.social a:hover {
+  font-size: 18px;
+  color: rgb(126, 180, 255);
+  text-decoration: none;
 }
 @media (max-width: 800px) {
   .logo img {
