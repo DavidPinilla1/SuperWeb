@@ -6,6 +6,7 @@ html {
   font-family: 'Montserrat', sans-serif;
 }
 .header {
+  background-color: #000710;
   display:flex;
   flex-wrap:wrap;
   justify-content: center;
@@ -42,7 +43,7 @@ nav li{
   position: relative;
 }
 nav a{
-    color:rgb(0, 23, 56);
+    color:rgb(0, 106, 255);
     text-decoration: none;
     
   font-weight: bold;
@@ -50,12 +51,12 @@ nav a{
     transition: all ease-in-out 350ms;
 }
 nav a:hover{
-  color:rgb(0, 121, 219);
+  color:rgb(137, 204, 255);
   text-decoration: none;
   font-weight: 900;
 
 }
-nav a::after{
+nav a::before{
   content:'';
   display: block;
   height: 7px;
@@ -65,11 +66,12 @@ nav a::after{
   top:0;
   transition: all ease-in-out 350ms;
 }
-nav a:hover::after{
+nav a:hover::before{
   width: 100%;
   background-color: rgb(77, 219, 255);
 }
 .a1 {
+  background-color:  rgb(223, 249, 255);
   display: flex;
   flex-direction: row;
   text-align: justify;
