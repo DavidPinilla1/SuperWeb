@@ -7,6 +7,7 @@
     <title> David Pinilla </title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/scripts.js"></script>
 </head>
 
 <body>
@@ -20,16 +21,16 @@
     <div class="nav">
     <nav>
         <ul>
-            <li ><a href="#">Home</a></li>
-            <li ><a href="#"> Portfolio</a></li>
-            <li ><a href="#">Contact</a></li>
+            <li ><a href="#" onclick="showHome()">Home</a></li>
+            <li ><a href="#" onclick="showPortfolio()"> Portfolio</a></li>
+            <li ><a href="#" onclick="showContact()">Contact</a></li>
         </ul>
     </nav>
 </div>
 
 </div>
 
-<div class="contenido">
+<div id=Home class="content">
     <br>
     <h1> About Me</h1>
     <section class="a1">
@@ -50,13 +51,42 @@
 
             <br></p>
     </section>
-    <section class="a3">
-        <p><h1></h1>
-            <br></p>
-    </section>
     
 </div>
-    <footer>
+
+
+<div id="Portfolio" class="hide">
+    <br/><div class="Portfolio">
+   <h1> Portfolio</h1>
+    <div class="tituloPortfolio">
+        Word processor made with Java and Swing:
+
+    </div>
+    <img class="WordProcessor"src="images/Procesador de textos.png"/>
+    <br/>
+    Click here to access the repository.
+    
+    <br/><br/>
+
+    <div class="tituloPortfolio">
+        Book reviews made with ReactJS, NodeJS, Express and MongoDB:</div><br/>
+    <img src="https://camo.githubusercontent.com/aeee2e3b3c68812128e3164cb5090da37ced8140/68747470733a2f2f692e696d6775722e636f6d2f385343346351422e676966" alt="" width="300" height="600">
+    <br>
+</div>
+</div>
+
+<div id="Contact" class="hide">
+        <br/>
+        <h1>Contact info</h1>
+        <br/><div class="a1"> If I can be of assistance, please do not hesitate to contact me:<br/>
+            
+            <a href="mailto:contact@davidpinilla.com">
+                <br/>Email: 
+            contact@davidpinilla.com</a>
+            <br/></div>
+    </div>
+
+<footer>
         <div class="divfooter">
             <p class="titulofooter">CONTACT</p>
             <p>Email: contact@davidpinilla.com</p>
@@ -71,17 +101,17 @@
             <p><br>
                 <ul>
                     <li class="github">
+                             <a href="https://github.com/DavidPinilla1/MERN-project" target="_blank">
+                                <img src="images/git1.png" onmouseover="this.src='images/git2.png'" 
+                                          onmouseout="this.src='images/git1.png'" alt="git">
+                                     MERN Project Books-reviews
+                                </a>
+                            </li><br>
+                    <li class="github">
                         <a href="https://github.com/DavidPinilla1/Procesador-de-Textos" target="_blank">
                             <img src="images/git1.png" onmouseover="this.src='images/git2.png'" 
                                     onmouseout="this.src='images/git1.png'" alt="git">
                                 Word processor
-                                </a>
-                    </li><br>
-                    <li class="github">
-                        <a href="https://github.com/DavidPinilla1/MERN-project" target="_blank">
-                            <img src="images/git1.png" onmouseover="this.src='images/git2.png'" 
-                                    onmouseout="this.src='images/git1.png'" alt="git">
-                                MERN Project Books-reviews
                                 </a>
                     </li><br>
                     <li class="github">
@@ -94,6 +124,7 @@
                 </ul>
             </p>
         </div>
+
         <div class="divfooter">
             <p class="titulofooter">SOCIAL MEDIA</p>
             <ul>
@@ -122,6 +153,6 @@
 </footer>
 <div class="Copy">
     <br>
-    <br><br>© David Pinilla 2018. All Rights Reserved.</div>
+    <br><br> © David Pinilla 2018. All Rights Reserved. </div>
 </body>
 </html>
