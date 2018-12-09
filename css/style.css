@@ -24,9 +24,12 @@ body {
   margin-left: 15px;
   padding-bottom: 15px;
 }
-#Home,
+#HomeEN,
+#Indice,
 #Portfolio,
-#Contact {
+#PortfolioES,
+#Contact,
+#Contacto {
   margin: auto;
   background-color: #ebf2f1e7;
   color: #00010d;
@@ -144,8 +147,8 @@ footer {
   flex-wrap: wrap;
   margin: 0 auto;
   padding-bottom: 5px;
-}
-.divfooter {
+} .divfooter
+ {
   font-size: 15px;
   text-align: left;
   text-decoration: none;

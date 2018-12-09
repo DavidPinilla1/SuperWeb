@@ -21,17 +21,32 @@
 
     <div class="nav">
     <nav>
-        <ul>
+        <ul><div id=englishnav>
             <li ><a href="#" onclick="showHome()">Home</a></li>
             <li ><a href="#" onclick="showPortfolio()"> Portfolio</a></li>
             <li ><a href="#" onclick="showContact()">Contact</a></li>
+            
+            <li><a href="#" onclick="spanish()"><img src="./images/espana1.png" 
+            onmouseover="this.src='images/espana2.png'" 
+             onmouseout="this.src='images/espana1.png'" width="50" height="33"></a></li>
+
+            </div>
+
+                <div id=spanishnav class="hide">
+                 <li ><a href="#" onclick="mostrarIndice()">Indice</a></li>
+                 <li ><a href="#" onclick="mostrarPortfolio()"> Portfolio</a></li>
+                 <li ><a href="#" onclick="mostrarContacto()">Contacto</a></li>
+                        
+                <li><a href="#" onclick="english()"><img src="./images/england1.png"
+                    onmouseover="this.src='images/england2.png'" 
+                    onmouseout="this.src='images/england1.png'" width="50" height="33"></a></li></div>
         </ul>
     </nav>
 </div>
 
 </div>
-
-<div id=Home class="content">
+<!--ENGLISH-->
+<div id=HomeEN class="show">
     <br>
     <h1> About Me</h1>
     <section class="a1">
@@ -94,6 +109,64 @@
             contact@davidpinilla.com</a>
             <br/></div>
     </div>
+<!--SPANISH-->
+<div id=Indice class="hide">
+        <br>
+        <h1> Sobre mi</h1>
+        <section class="a1">
+                <br>
+                <img src="images/david.png"/> <p><br> Mi nombre es David Pinilla.
+                    
+    
+                </p><br>
+        </section>
+        <section class="a2">
+            <h1> Lenguajes de programación y Frameworks</h1>
+            <p><br>
+                   
+                    <br>
+    
+                <br></p>
+        </section>
+        
+    </div>
+    
+    <div id="PortfolioES" class="hide">
+            <br/><div class="Portfolio">
+           <h1> Portfolio</h1><br/>
+            <div class="tituloPortfolio">
+                Procesador de textos hecho con Java y Swing:
+        
+            </div>
+            <img class="WordProcessor"src="images/Procesador de textos.png"/>
+            <br/>
+            Click <a href="https://github.com/DavidPinilla1/Procesador-de-Textos">here</a> para acceder al repositorio.
+            
+            <br/><br/>
+        
+            <div class="tituloPortfolio">
+                Opiniones de libros hecho con ReactJS, NodeJS, Express y MongoDB:</div>
+            <img src="https://camo.githubusercontent.com/aeee2e3b3c68812128e3164cb5090da37ced8140/68747470733a2f2f692e696d6775722e636f6d2f385343346351422e676966" alt="" width="300" height="600">
+            <br>
+            Haz click <a href="https://books-davidpinilla.herokuapp.com">aquí</a> para probar la aplicación.
+        
+            <br/>
+            Haz click <a href="https://github.com/DavidPinilla1/MERN-project">aquí</a> para acceder al repositorio.
+            <br/> <br/>
+        </div>
+    </div>
+    
+    <div id="Contacto" class="hide">
+            <br/>
+            <h1>Información de contacto</h1><div class="a1">
+                 Si desea contactar conmigo no dude en enviarme un email a la siguiente dirección:   
+                 <br/>
+                 <br/>
+                <a href="mailto:contact@davidpinilla.com">
+                   Email: 
+                contact@davidpinilla.com</a>
+                <br/></div>
+        </div>
 
 <footer>
         <div class="divfooter">
@@ -156,10 +229,11 @@
                     </a>
                 </li>
             </ul>
-            
         </div>
-        
+    <!--Spanish footer-->
 </footer>
+
+
 <div class="Copy">
     <br>
     <br><br> © David Pinilla 2018. All Rights Reserved. <br><br></div>
