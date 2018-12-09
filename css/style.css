@@ -137,7 +137,7 @@ nav ul {
   list-style-type: none;
 }
 
-footer {
+#footcontainerEN, #footcontainerES {
   background-color: #00010de3;
   color: #8abac5;
   list-style-type: none;
