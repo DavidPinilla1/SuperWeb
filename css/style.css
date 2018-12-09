@@ -44,12 +44,6 @@ h1 {
   font-weight: 900;
   text-align: center;
 }
-.nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
 nav li {
   display: inline-block;
   margin-left: 45px;
@@ -194,13 +188,18 @@ nav ul {
 }
 @media (max-width: 600px) {
   .logo img {
-    width: 300px;
+    width: 380px;
   }
+nav li {
+  margin-left: 25px;
+  padding-top: 15px;
+  list-style: none;
+  position: relative;
+}
   .WordProcessor {
     width: 250px;
     height: 300px;
   }
-
   .a1 img {
     display: block;
     margin-left: auto;
@@ -237,7 +236,8 @@ nav ul {
   width:25px;
   height:17px
   }
-  footer {
+  #footcontainerEN,
+#footcontainerES {
     flex-direction: column;
     flex-wrap: wrap;
   }
