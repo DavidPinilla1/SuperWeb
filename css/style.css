@@ -38,19 +38,6 @@ body {
   font-weight: bold;
   font-size: 25px;
 }
-
-.contact {
-  margin: auto;
-  background-color: #ebf2f1e7;
-  color: #00010d;
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  font-size: 15px;
-}
-.hide {
-  display: none;
-}
 h1 {
   color: #00010d;
   font-size: 30px;
@@ -137,7 +124,8 @@ nav ul {
   list-style-type: none;
 }
 
-#footcontainerEN, #footcontainerES {
+#footcontainerEN,
+#footcontainerES {
   background-color: #00010de3;
   color: #8abac5;
   list-style-type: none;
@@ -147,8 +135,8 @@ nav ul {
   flex-wrap: wrap;
   margin: 0 auto;
   padding-bottom: 5px;
-} .divfooter
- {
+}
+.divfooter {
   font-size: 15px;
   text-align: left;
   text-decoration: none;
@@ -181,6 +169,10 @@ nav ul {
   color: #8abac5;
   text-align: center;
   padding-bottom: 5px;
+}
+
+.hide {
+  display: none !important;
 }
 @media (max-width: 800px) {
   .logo img {
