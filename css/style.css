@@ -3,6 +3,9 @@
 html {
   font-family: 'Montserrat', sans-serif;
 }
+body {
+  background-image: url('../images/background.jpg');
+}
 .header {
   background-color: #00010dc9;
   color: #8abac5;
@@ -95,10 +98,7 @@ nav a::before {
 nav a:hover::before {
   width: 100%;
 }
-body {
-  /* background-image: url('https://i.pinimg.com/564x/b2/6e/e6/b26ee626e97436b9fe5bd74e92a633f0.jpg')*/
-  background-image: url('../images/background.jpg');
-}
+
 .a1 {
   display: flex;
   flex-direction: row;
@@ -204,6 +204,14 @@ footer {
   .WordProcessor {
     width: 250px;
     height: 300px;
+  }
+
+  .a1 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 180px;
+    height: 180px;
   }
   .divfooter {
     font-size: 11px;
