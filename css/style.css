@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+html {
+  font-family: 'Montserrat', sans-serif;
+}
+body {
+  background-image: url('../images/background.jpg');
+}
+.header {
+  background-color: #00010dc9;
+  color: #8abac5;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.logo {
+  float: left;
+  margin: 5px 10px 5px 0px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+  padding-bottom: 15px;
+}
+#HomeEN,
+#Indice,
+#Portfolio,
+#PortfolioES,
+#Contact,
+#Contacto {
+  margin: auto;
+  background-color: #e4f2ff;
+  color: #00010d;
+}
+.tituloPortfolio {
+  font-weight: bold;
+  font-size: 25px;
+}
+h1 {
+  color: #00010d;
+  font-size: 30px;
+  font-weight: 900;
+  text-align: center;
+}
+nav li {
+  display: inline-block;
+  margin-left: 45px;
+  padding-top: 20px;
+  list-style: none;
+  position: relative;
+}
+a {
+  color: #000541;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+}
+nav a {
+  color: #8abac5;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  transition: all ease-in-out 350ms;
+}
+nav a:hover {
+  color: #3bb3ce;
+  text-decoration: none;
+  font-weight: 900;
+}
+nav a::before {
+  content: '';
+  display: block;
+  height: 7px;
+  width: 0%;
+  background-color: #3bb3ce;
+  position: absolute;
+  top: 0;
+  transition: all ease-in-out 350ms;
+}
+nav a:hover::before {
+  width: 100%;
+}
+
+.a1 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+.a1 p,
+.a2 p,
+.contact p,
+#Portfolio,
+#Contact {
+  text-align: justify;
+  line-height: 1.4;
+  font-size: 20px;
+  font-weight: 500;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+.Portfolio {
+  text-align: center;
+}
+.a1 img {
+  height: 100%;
+}
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 0 auto;
+  justify-content: center;
+  list-style-type: none;
+}
+
+#footcontainerEN,
+#footcontainerES {
+  background-color: #00010de3;
+  color: #8abac5;
+  list-style-type: none;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding-bottom: 5px;
+}
+.divfooter {
+  font-size: 15px;
+  text-align: left;
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 20%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  margin: 0 auto;
+  align-items: center;
+  min-width: 130px;
+}
+.titulofooter {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+.github a {
+  color: #8abac5;
+  text-decoration: none;
+  font-size: 18px;
+}
+.github a:hover {
+  color: #3bb3ce;
+}
+.Copy {
+  background-color: #00010de3;
+  color: #8abac5;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.hide {
+  display: none !important;
+}
+@media (max-width: 800px) {
+  .logo img {
+    width: 400px;
+  }
+  .a1 {
+    flex-direction: column;
+  }
+  .a1 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    height: 40%;
+  }
+  .divfooter {
+    text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  .logo img {
+    width: 380px;
+  }
+nav li {
+  margin-left: 25px;
+  padding-top: 15px;
+  list-style: none;
+  position: relative;
+}
+  .WordProcessor {
+    width: 250px;
+    height: 300px;
+  }
+  .a1 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 180px;
+    height: 180px;
+  }
+  .divfooter {
+    font-size: 11px;
+  }
+  .titulofooter {
+    font-size: 15px;
+  }
+  a {
+    font-size: 15px;
+  }
+  .tituloPortfolio {
+    font-size: 20px;
+  }
+  .github a {
+    font-size: 12px;
+  }
+  .a1 p,
+  .a2 p,
+  .contact p,
+  #Portfolio,
+  #Contact {
+    font-size: 15px;
+  }
+  nav a {
+    font-size: 15px;
+  }
+  nav img{
+  width:25px;
+  height:17px
+  }
+  #footcontainerEN,
+#footcontainerES {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .divfooter {
+    text-align: center;
+  }
+}
