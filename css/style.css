@@ -31,7 +31,7 @@ body {
 #Contact,
 #Contacto {
   margin: auto;
-  background-color: #e4f2ff;
+  background-color: #e4f2fff6;
   color: #00010d;
 }
 .tituloPortfolio {
@@ -103,11 +103,16 @@ nav a:hover::before {
   padding-right: 30px;
   padding-left: 30px;
 }
+
 .Portfolio {
   text-align: center;
 }
 .a1 img {
   height: 100%;
+}
+.programingimg img {
+  overflow-x: hidden;
+  width: 1200px;
 }
 nav ul {
   display: flex;
@@ -168,9 +173,20 @@ nav ul {
 .hide {
   display: none !important;
 }
+@media (max-width: 1200px) {
+  .logo img {
+    width: 800px;
+  }
+  .programingimg img {
+    width: 800px;
+  }
+}
 @media (max-width: 800px) {
   .logo img {
-    width: 400px;
+    width: 550px;
+  }
+  .programingimg img {
+    width: 600px;
   }
   .a1 {
     flex-direction: column;
@@ -188,14 +204,17 @@ nav ul {
 }
 @media (max-width: 600px) {
   .logo img {
-    width: 380px;
+    width: 400px;
   }
-nav li {
-  margin-left: 25px;
-  padding-top: 15px;
-  list-style: none;
-  position: relative;
-}
+  .programingimg img {
+    width: 440px;
+  }
+  nav li {
+    margin-left: 25px;
+    padding-top: 15px;
+    list-style: none;
+    position: relative;
+  }
   .WordProcessor {
     width: 250px;
     height: 300px;
@@ -232,16 +251,24 @@ nav li {
   nav a {
     font-size: 15px;
   }
-  nav img{
-  width:25px;
-  height:17px
+  nav img {
+    width: 25px;
+    height: 17px;
   }
   #footcontainerEN,
-#footcontainerES {
+  #footcontainerES {
     flex-direction: column;
     flex-wrap: wrap;
   }
   .divfooter {
     text-align: center;
+  }
+}
+@media (max-width: 400px) {
+  .logo img {
+    width: 400px;
+  }
+  .programingimg img {
+    width: 400px;
   }
 }
