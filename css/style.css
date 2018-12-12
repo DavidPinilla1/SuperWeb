@@ -49,7 +49,7 @@ nav li {
   position: relative;
 }
 a {
-  color: #000541;
+  color: #8abac5;
   text-decoration: none;
   font-weight: bold;
   font-size: 20px;
@@ -79,6 +79,7 @@ nav a::before {
 nav a:hover::before {
   width: 100%;
 }
+
 
 .a1 {
   display: flex;
@@ -122,8 +123,8 @@ nav a:hover::before {
 .a1 img {
   height: 100%;
 }
-.programing img {
-  width: 100%;
+.programing {
+width: 1200px;
 }
 nav ul {
   display: flex;
@@ -188,11 +189,17 @@ nav ul {
   .logo img {
     width: 600px;
   }
+  .programing img{
+    width: 700px;
+    }
 }
 @media (max-width: 768px) {
   .logo img {
     width: 550px;
-  }
+  } 
+   .programing img{
+    width:600px;
+    }
   .Portfolio {
     flex-direction: column;
   }
@@ -219,6 +226,10 @@ nav ul {
   h1{
     font-size: 25px;
   }
+  .avatar img{
+    max-width: 120px;
+    max-height: 120px;
+    }
   .logo img {
     width: 400px;
   }
