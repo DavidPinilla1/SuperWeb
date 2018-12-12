@@ -35,10 +35,6 @@ body {
   background-color: #e4f2fff6;
   color: #00010d;
 }
-.tituloPortfolio {
-  font-weight: bold;
-  font-size: 25px;
-}
 h1 {
   color: #00010d;
   font-size: 30px;
@@ -93,22 +89,40 @@ nav a:hover::before {
 .a2 p,
 .contact p,
 #Portfolio,
-#Contact {
+#PortfolioES,
+#Contact,
+#Contacto {
   text-align: justify;
   line-height: 1.4;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
   padding-right: 30px;
   padding-left: 30px;
 }
 
 .Portfolio {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
   text-align: center;
+}
+.tituloPortfolio {
+  font-weight: bold;
+  font-size: 20px;
+}
+.portfoliosec{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.portfolioimages img{
 }
 .a1 img {
   height: 100%;
 }
-.programingimg img {
+.programing img {
   width: 100%;
 }
 nav ul {
@@ -155,7 +169,7 @@ nav ul {
 .github a {
   color: #8abac5;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 15px;
 }
 .github a:hover {
   color: #3bb3ce;
@@ -170,20 +184,22 @@ nav ul {
 .hide {
   display: none !important;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
   .logo img {
     width: 600px;
   }
- .programingimg img {
-    width: 800px;
-  }
 }
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .logo img {
     width: 550px;
   }
-  .programingimg img {
-    width: 600px;
+  .Portfolio {
+    flex-direction: column;
+  }
+  .portfoliosec{
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
   }
   .a1 {
     flex-direction: column;
@@ -200,10 +216,13 @@ nav ul {
   }
 }
 @media (max-width: 600px) {
+  h1{
+    font-size: 25px;
+  }
   .logo img {
     width: 400px;
   }
-  .programingimg img {
+  .programing img {
     width: 440px;
   }
   nav li {
@@ -211,6 +230,9 @@ nav ul {
     padding-top: 10px;
     list-style: none;
     position: relative;
+  }
+  .Portfolio {
+    flex-direction: column;
   }
   .WordProcessor {
     width: 250px;
@@ -227,10 +249,13 @@ nav ul {
     font-size: 11px;
   }
   .titulofooter {
-    font-size: 16px;
+    font-size: 18px;
   }
   a {
     font-size: 13px;
+  }
+  .portfoliosec a {
+    font-size: 16px;
   }
   .tituloPortfolio {
     font-size: 20px;
@@ -266,7 +291,7 @@ nav ul {
   .logo img {
     width: 400px;
   }
-  .programingimg img {
-    width: 380px;
+  .programing img {
+    width: 370px;
   }
 }
