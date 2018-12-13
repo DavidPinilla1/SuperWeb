@@ -99,6 +99,8 @@ nav a:hover::before {
   padding-left: 30px;
 }
 .a1 img {
+  display: block;
+  margin:auto;
   margin-left: 2%;
 }
 .Portfolio {
@@ -204,8 +206,6 @@ nav ul {
     flex-direction: column;
   }
   .a1 img {
-    display: block;
-    margin:auto;
     width: 25%;
     height: 25%;
   }
@@ -232,10 +232,6 @@ nav ul {
   .WordProcessor {
     width: 250px;
     height: 300px;
-  }
-  .a1 img {
-    width: 120px;
-    height: 120px;
   }
   .divfooter {
     font-size: 11px;
@@ -275,8 +271,5 @@ nav ul {
   #footcontainerES {
     flex-direction: column;
     flex-wrap: wrap;
-  }
-  .divfooter {
-    text-align: center;
   }
 }
