@@ -52,7 +52,10 @@ a {
   color: #8abac5;
   text-decoration: none;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 16px;
+}
+a:hover{
+  text-decoration: underline;
 }
 nav a {
   color: #8abac5;
@@ -174,6 +177,7 @@ nav ul {
 }
 .github a:hover {
   color: #3bb3ce;
+  text-decoration: underline;
 }
 .Copy {
   background-color: #00010de3;
