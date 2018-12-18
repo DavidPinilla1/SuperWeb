@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&subset=latin-ext');
-
 html {
   font-family: 'Montserrat', sans-serif;
 }
@@ -49,12 +48,14 @@ nav li {
   position: relative;
 }
 a {
-  color: #8abac5;
+  color: #00a0c4;
   text-decoration: none;
   font-weight: bold;
   font-size: 16px;
 }
 a:hover{
+  
+  color: #006b83;
   text-decoration: underline;
 }
 nav a {
@@ -103,8 +104,7 @@ nav a:hover::before {
 }
 .a1 img {
   display: block;
-  margin:auto;
-  margin-left: 2%;
+  margin: auto;
 }
 .Portfolio {
   display: flex;
@@ -124,10 +124,15 @@ nav a:hover::before {
   margin-right: 5%;
 }
 
-.programing img{
+.programing img, {
 display: block;
 margin:auto;
 width: 92%;
+}
+#Contact img, #Contacto img{
+display: block;
+margin:auto;
+width: 25%;
 }
 nav ul {
   display: flex;
@@ -209,9 +214,13 @@ nav ul {
   .a1 {
     flex-direction: column;
   }
-  .a1 img {
+  .a1 img  {
     width: 25%;
     height: 25%;
+  }
+  #Contact img,#Contacto img{
+    width: 50%;
+    height: 50%;
   }
   .divfooter {
     text-align: center;
