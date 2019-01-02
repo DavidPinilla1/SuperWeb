@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
-
+@import url('https://fonts.googleapis.com/css?family=Montserrat&subset=latin-ext');
 html {
   font-family: 'Montserrat', sans-serif;
 }
 body {
   background-image: url('../images/background.jpg');
+  background-repeat: no-repeat;
 }
 .header {
   background-color: #00010dc9;
@@ -31,12 +31,8 @@ body {
 #Contact,
 #Contacto {
   margin: auto;
-  background-color: #e4f2ff;
+  background-color: #e4f2fff6;
   color: #00010d;
-}
-.tituloPortfolio {
-  font-weight: bold;
-  font-size: 25px;
 }
 h1 {
   color: #00010d;
@@ -52,10 +48,15 @@ nav li {
   position: relative;
 }
 a {
-  color: #000541;
+  color: #00a0c4;
   text-decoration: none;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 16px;
+}
+a:hover{
+  
+  color: #006b83;
+  text-decoration: underline;
 }
 nav a {
   color: #8abac5;
@@ -83,31 +84,55 @@ nav a:hover::before {
   width: 100%;
 }
 
+
 .a1 {
   display: flex;
   flex-direction: row;
-  margin-top: 20px;
-  padding-bottom: 10px;
-  padding-right: 30px;
-  padding-left: 30px;
 }
 .a1 p,
 .a2 p,
 .contact p,
 #Portfolio,
-#Contact {
+#PortfolioES,
+#Contact,
+#Contacto {
   text-align: justify;
   line-height: 1.4;
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 16px;
   padding-right: 30px;
   padding-left: 30px;
 }
+.a1 img {
+  display: block;
+  margin: auto;
+}
 .Portfolio {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
   text-align: center;
 }
-.a1 img {
-  height: 100%;
+.tituloPortfolio {
+  font-weight: bold;
+  font-size: 20px;
+}
+.portfoliosec{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.a2 img {
+ display: block;
+ margin: auto;
+width: 92%;
+}
+#Contact img, #Contacto img{
+display: block;
+margin:auto;
+width: 25%;
 }
 nav ul {
   display: flex;
@@ -153,10 +178,11 @@ nav ul {
 .github a {
   color: #8abac5;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 15px;
 }
 .github a:hover {
   color: #3bb3ce;
+  text-decoration: underline;
 }
 .Copy {
   background-color: #00010de3;
@@ -168,80 +194,95 @@ nav ul {
 .hide {
   display: none !important;
 }
-@media (max-width: 800px) {
+@media (max-width: 1280px) {
   .logo img {
-    width: 400px;
+    width: 600px;
+  }
+}
+@media (max-width: 768px) {
+  .logo img {
+    width: 550px;
+  } 
+  .Portfolio {
+    flex-direction: column;
+  }
+  .portfoliosec{
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
   }
   .a1 {
     flex-direction: column;
   }
-  .a1 img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
-    height: 40%;
+  .a1 img  {
+    width: 25%;
+    height: 25%;
+  }
+  #Contact img,#Contacto img{
+    width: 50%;
+    height: 50%;
   }
   .divfooter {
     text-align: center;
   }
 }
 @media (max-width: 600px) {
+  h1{
+    font-size: 25px;
+  }
   .logo img {
     width: 380px;
   }
-nav li {
-  margin-left: 25px;
-  padding-top: 15px;
-  list-style: none;
-  position: relative;
-}
+  nav li {
+    margin-left: 25px;
+    padding-top: 10px;
+    list-style: none;
+    position: relative;
+  }
+  .Portfolio {
+    flex-direction: column;
+  }
   .WordProcessor {
     width: 250px;
     height: 300px;
-  }
-  .a1 img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 180px;
-    height: 180px;
   }
   .divfooter {
     font-size: 11px;
   }
   .titulofooter {
-    font-size: 15px;
+    font-size: 18px;
   }
   a {
-    font-size: 15px;
+    font-size: 13px;
+  }
+  .portfoliosec a {
+    font-size: 16px;
   }
   .tituloPortfolio {
     font-size: 20px;
   }
   .github a {
-    font-size: 12px;
+    font-size: 13px;
   }
   .a1 p,
   .a2 p,
-  .contact p,
   #Portfolio,
+  #PortfolioES,
+  #Contacto,
   #Contact {
-    font-size: 15px;
+    font-size: 13px;
   }
   nav a {
     font-size: 15px;
   }
-  nav img{
-  width:25px;
-  height:17px
-  }
+  nav img {
+    width: 23px;
+    height: 15px;
+  }nav a::before {
+    height: 4px;}
   #footcontainerEN,
-#footcontainerES {
+  #footcontainerES {
     flex-direction: column;
     flex-wrap: wrap;
-  }
-  .divfooter {
-    text-align: center;
   }
 }
