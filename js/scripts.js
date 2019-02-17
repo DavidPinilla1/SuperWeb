@@ -1,4 +1,7 @@
 hide=()=>{
+    $(document).ready(function(){
+        $("#main").hide().fadeIn(1000);
+      });
     document.getElementById('HomeEN').className = 'hide';
     document.getElementById('Portfolio').className = 'hide';  
     document.getElementById('Contact').className = 'hide';
