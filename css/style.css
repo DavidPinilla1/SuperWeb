@@ -3,8 +3,8 @@ html {
   font-family: 'Montserrat', sans-serif;
 }
 body {
-  background-image: url('../images/background.jpg');
   background-repeat: no-repeat;
+  background-image: url('../images/background.jpg');
 }
 .header {
   background-color: #00010dc9;
